@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pathfinder {
+    display: block;
+    margin: auto 0;
+}
+
+#pathfinder-grid {
+    margin: 5px;
+}
+
+.pathfinder-row {
+    table-layout: fixed;
+}
+
+.pathfinder-element {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #000;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+.pathfinder-ui {
+    width: 10%;
+}
+
+.pathfinder-hidden {
+    display: none;
+}
+
+.pathfinder-type-normal {
+    color: #000;
+}
+
+.pathfinder-type-unpassable {
+    color: #FFF;
+    background-color: #000;
+}
+
+.pathfinder-candidate {
+    background-color: #FF8;
+}
+
+.pathfinder-examined {
+    background-color: #88F;
+}
+
+.pathfinder-path {
+    background-color: #F0F;
+}
+
+.pathfinder-type-start {
+    color: #FFF;
+    background-color: #00F;
+}
+
+.pathfinder-type-destination {
+    color: #FFF;
+    background-color: #F00;
+}
+
+input[name="pathfinder-move-cost"] {
+    width: 64px;
+}
+
+.pathfinder-selected {
+    border: 2px solid #0F0;
+}
